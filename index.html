@@ -21,9 +21,9 @@
     <script src="./assets/scripts.js"></script>
   </head>
   <body>
-    <div class="top-header">
-      <h3 class="name">Nina Carducci</h3>
-      <div class="nav">
+    <header class="top-header">
+      <h1 class="name">Nina Carducci</h1>
+      <nav class="nav">
         <ul>
           <li><a href="#about">À propos</a></li>
           <li><a href="#gallery">Galerie</a></li>
@@ -38,9 +38,9 @@
             /></a>
           </li>
         </ul>
-      </div>
-    </div>
-    <div id="header">
+      </nav>
+    </header>
+    <section id="header">
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -69,27 +69,27 @@
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <figure class="carousel-item active">
             <img
               src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg"
               class="d-block w-100"
               alt="..."
             />
-          </div>
-          <div class="carousel-item">
+          </figure>
+          <figure class="carousel-item">
             <img
               src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg"
               class="d-block w-100"
               alt="..."
             />
-          </div>
-          <div class="carousel-item">
+          </figure>
+          <figure class="carousel-item">
             <img
               src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg"
               class="d-block w-100"
               alt="..."
             />
-          </div>
+          </figure>
         </div>
         <button
           class="carousel-control-prev"
@@ -110,12 +110,12 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
-    <div id="about">
-      <div class="picture left">
+    </section>
+    <section id="about">
+      <figure class="picture left">
         <img src="./assets/images/nina.png" />
-      </div>
-      <div id="about-me">
+      </figure>
+      <article id="about-me">
         <h3 class="about-me__title">A propos de moi</h3>
         <h6 class="about-me__introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
@@ -132,9 +132,9 @@
           puissiez y puiser de l’amour, du bonheur, de la tendresse et de
           lumière à chaque fois que vous poserez les yeux sur vos photos.
         </p>
-      </div>
-    </div>
-    <div id="gallery">
+      </article>
+    </section>
+    <section id="gallery">
       <h3 class="title">Portfolio</h3>
       <div class="container py-3">
         <div class="gallery" style="display: none">
@@ -185,8 +185,8 @@
           />
         </div>
       </div>
-      <div class="quote">
-        <figure>
+      <article class="quote">
+        <div>
           <blockquote>
             <h1 class="quote__text">
               Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
@@ -195,14 +195,14 @@
               Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
             </h1>
           </blockquote>
-          <figcaption class="quote__author">- Richard Avedon</figcaption>
-        </figure>
-      </div>
-    </div>
-    <div id="services">
+          <p class="quote__author">- Richard Avedon</p>
+        </div>
+      </article>
+    </section>
+    <section id="services">
       <h3 class="title">Mes services</h3>
       <div class="container">
-        <div class="service">
+        <article class="service">
           <div class="service__description">
             <h3>Shooting photo</h3>
             <p>
@@ -215,8 +215,8 @@
             <h4>350€/demi journée</h4>
             <span>Matériel, déplacement inclus</span>
           </div>
-        </div>
-        <div class="service">
+        </article>
+        <article class="service">
           <div class="service__description">
             <h3>Retouches</h3>
             <p>
@@ -228,8 +228,8 @@
             <h4>50€/photo</h4>
             <span>2 AR par photo</span>
           </div>
-        </div>
-        <div class="service">
+        </article>
+        <article class="service">
           <div class="service__description">
             <h3>Album photos</h3>
             <p>
@@ -241,9 +241,9 @@
             <h4>400€ album A4</h4>
             <span>30 pages recto/verso</span>
           </div>
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
     <div class="quote">
       <figure>
         <blockquote>
@@ -256,19 +256,19 @@
         <figcaption class="quote__author">- Richard Avedon</figcaption>
       </figure>
     </div>
-    <div id="contact">
+    <section id="contact">
       <div class="container">
-        <div class="form-container">
+        <article class="form-container">
           <h3>Une question ? Une demande de devis ?</h3>
           <p>
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
           <form action="" method="post">
-            <label>Nom</label>
+            <label for="nom">Nom</label>
             <input type="text" name="nom" id="nom" />
-            <label>Email</label>
+            <label for="email">Email</label>
             <input type="email" name="email" id="email" />
-            <label>Message</label>
+            <label for="message">Message</label>
             <textarea
               name="message"
               id="message"
@@ -277,11 +277,11 @@
             ></textarea>
             <input type="submit" value="Envoyer" />
           </form>
-        </div>
-        <div class="picture right">
+        </article>
+        <figure class="picture right">
           <img src="./assets/images/camera.png" />
-        </div>
+        </figure>
       </div>
-    </div>
+    </section>
   </body>
 </html>
