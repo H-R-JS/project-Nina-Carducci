@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
+    <title>Photographe Nina Carduccci</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.css" />
@@ -11,19 +12,20 @@
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
-    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+    <script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
     <script
+      defer
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/maugallery.js"></script>
-    <script src="./assets/scripts.js"></script>
+    <script defer src="./assets/maugallery.js"></script>
+    <script defer src="./assets/scripts.js"></script>
   </head>
   <body>
     <header class="top-header">
       <h1 class="name">Nina Carducci</h1>
-      <nav class="nav">
+      <nav>
         <ul>
           <li><a href="#about">À propos</a></li>
           <li><a href="#gallery">Galerie</a></li>
@@ -34,13 +36,13 @@
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              ><img src="assets/images/instagram.png" alt=""
+              ><img src="assets/images/instagram.webp" alt="Icone instagram"
             /></a>
           </li>
         </ul>
       </nav>
     </header>
-    <section id="header">
+    <section class="carousel">
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -71,23 +73,23 @@
         <div class="carousel-inner">
           <figure class="carousel-item active">
             <img
-              src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg"
-              class="d-block w-100"
-              alt="..."
+              src="./assets/images/slider/ryoji-iwata.webp"
+              class="img-carousel"
+              alt="Photo d'accueil du site"
             />
           </figure>
           <figure class="carousel-item">
             <img
-              src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg"
+              src="./assets/images/slider/nicholas-green.webp"
               class="d-block w-100"
-              alt="..."
+              alt="Photo d'accueil du site"
             />
           </figure>
           <figure class="carousel-item">
             <img
-              src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg"
+              src="./assets/images/slider/edward-cisneros.webp"
               class="d-block w-100"
-              alt="..."
+              alt="Photo d'accueil du site"
             />
           </figure>
         </div>
@@ -113,7 +115,7 @@
     </section>
     <section id="about">
       <figure class="picture left">
-        <img src="./assets/images/nina.png" />
+        <img src="./assets/images/nina.webp" alt="Image de la photographe" />
       </figure>
       <article id="about-me">
         <h3 class="about-me__title">A propos de moi</h3>
@@ -141,47 +143,65 @@
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
-            src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"
+            src="./assets/images/gallery/concerts/aaron-paul.webp"
+            alt="Image de la galerie"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"
+            src="./assets/images/gallery/entreprise/ali-morshedlou.webp"
+            alt="Image de la galerie"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg"
+            src="./assets/images/gallery/entreprise/jason-goodman.webp"
+            alt="Image de la galerie"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
-            src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg"
+            src="./assets/images/gallery/mariage/hannah-busing.webp"
+            alt="Image de la galerie"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
-            src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"
+            src="./assets/images/gallery/portraits/ade-tunji.webp"
+            alt="Image de la galerie"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
-            src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"
+            src="./assets/images/gallery/mariage/jakob-owens-Sini.webp"
+            alt="Image de la galerie"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
-            src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg"
+            src="./assets/images/gallery/portraits/nino-van-prattenburg.webp"
+            alt="Image de la galerie"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
-            src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg"
+            src="./assets/images/gallery/concerts/austin-neill.webp"
+            alt="Image de la galerie"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"
+            src="./assets/images/gallery/entreprise/mateus-campos-felipe.webp"
+            alt="Image de la galerie"
+            loading="lazy"
           />
         </div>
       </div>
@@ -279,7 +299,10 @@
           </form>
         </article>
         <figure class="picture right">
-          <img src="./assets/images/camera.png" />
+          <img
+            src="./assets/images/camera.webp"
+            alt="Image d'un appareil photo"
+          />
         </figure>
       </div>
     </section>
