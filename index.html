@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Photographe Nina Carduccci</title>
+    <title>Photographe Nina Carduccci Bordeaux</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.css" />
@@ -21,6 +21,53 @@
     ></script>
     <script defer src="./assets/maugallery.js"></script>
     <script defer src="./assets/scripts.js"></script>
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/slider/ryoji-iwata.webp"
+    />
+    <meta
+      property="og:site_name"
+      content="Photographe Nina Carduccci Bordeaux"
+    />
+    <meta property="og:title" content="Photographe Bordeaux - Nina Carducci" />
+    <meta
+      property="og:description"
+      content="Découvrez mes services de photographie ! Situez à Bordeaux !"
+    />
+    <meta
+      property="og:image"
+      content="http://127.0.0.1:5500/assets/images/nina.webp"
+    />
+    <meta property="og:url" content="http://127.0.0.1:5500/index.html" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ninacarducci" />
+    <meta name="twitter:title" content="Photographe Bordeaux - Nina Carducci" />
+    <meta
+      name="twitter:description"
+      content="Découvrez mes services de photographie ! Situez à Bordeaux !"
+    />
+    <meta
+      name="twitter:image"
+      content="http://127.0.0.1:5500/assets/images/nina.webp"
+    />
+    <meta name="twitter:url" content="http://127.0.0.1:5500/index.html" />
+    <script type="application/ld+json">
+      {
+        "@context": "http://127.0.0.1:5500/index.html",
+        "@type": "Website",
+        "name": "Photographe Nina Carduccci Bordeaux",
+        "subjectOf": {
+          "@type": "Photographie",
+          "name": "Découvrez mes services de photographie ! Situez à Bordeaux !"
+        },
+        "object": {
+          "@type": "LocalBusiness",
+          "name": "Photographe Nina Carduccci Bordeaux"
+        }
+      }
+    </script>
   </head>
   <body>
     <header class="top-header">
@@ -76,20 +123,23 @@
               src="./assets/images/slider/ryoji-iwata.webp"
               class="img-carousel"
               alt="Photo d'accueil du site"
+              loading="eager"
             />
           </figure>
           <figure class="carousel-item">
             <img
               src="./assets/images/slider/nicholas-green.webp"
-              class="d-block w-100"
+              class="img-carousel"
               alt="Photo d'accueil du site"
+              loading="lazy"
             />
           </figure>
           <figure class="carousel-item">
             <img
               src="./assets/images/slider/edward-cisneros.webp"
-              class="d-block w-100"
+              class="img-carousel"
               alt="Photo d'accueil du site"
+              loading="lazy"
             />
           </figure>
         </div>
@@ -115,7 +165,11 @@
     </section>
     <section id="about">
       <figure class="picture left">
-        <img src="./assets/images/nina.webp" alt="Image de la photographe" />
+        <img
+          src="./assets/images/nina.webp"
+          alt="Image de la photographe"
+          loading="lazy"
+        />
       </figure>
       <article id="about-me">
         <h3 class="about-me__title">A propos de moi</h3>
@@ -302,6 +356,7 @@
           <img
             src="./assets/images/camera.webp"
             alt="Image d'un appareil photo"
+            loading="lazy"
           />
         </figure>
       </div>

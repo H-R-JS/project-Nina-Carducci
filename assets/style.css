@@ -1,11 +1,13 @@
-body {
-  max-width: 1920px;
-  margin: auto;
-}
 * {
   font-family: "Inter";
   font-style: normal;
 }
+
+body {
+  max-width: 1920px;
+  margin: auto;
+}
+
 .top-header {
   background-color: white;
   position: sticky;
@@ -42,8 +44,36 @@ nav a {
   width: 20px;
 }
 
-.img-carousel {
+.carousel-inner {
   width: 100%;
+}
+
+.carousel-item {
+  width: 100%;
+}
+
+.img-carousel {
+  /**/
+  object-fit: cover;
+  width: 100%;
+  height: 880px;
+}
+
+.carousel-control-prev {
+  top: 400px;
+  left: 100px;
+  color: #fff;
+  background-color: #000;
+  width: 100px;
+  height: 100px;
+}
+.carousel-control-next {
+  top: 400px;
+  right: 100px;
+  color: #fff;
+  background-color: #000;
+  width: 100px;
+  height: 100px;
 }
 
 #about {
@@ -106,8 +136,8 @@ nav a {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #beb45a;
+  color: #000;
+  background-color: #dda500;
   border-radius: 0;
 }
 .nav-pills .nav-link {
