@@ -109,6 +109,7 @@
       }
     },
     openLightBox(element, lightboxId) {
+      console.log(lightboxId, element, $(`#${lightboxId}`).modal);
       $(`#${lightboxId}`)
         .find(".lightboxImage")
         .attr("src", element.attr("src"));
@@ -119,7 +120,6 @@
       $("img.gallery-item").each(function () {
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
           activeImage = $(this);
-          console.log(activeImage);
         }
       });
       let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
@@ -149,7 +149,6 @@
         imagesCollection[index] ||
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
-      console.log(imagesCollection[index]);
     },
     nextImage() {
       let activeImage = null;

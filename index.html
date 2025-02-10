@@ -3,7 +3,7 @@
   <head>
     <title>Photographe Nina Carduccci Bordeaux</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
-    <script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
+    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
     <script
       defer
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -96,7 +96,7 @@
   <body>
     <header class="top-header">
       <h1>Nina Carducci - Photographe à Bordeaux</h1>
-      <nav>
+      <nav role="navigation">
         <ul>
           <li><a href="#about">À propos</a></li>
           <li><a href="#gallery">Galerie</a></li>
@@ -104,6 +104,7 @@
           <li><a href="#contact">Contact</a></li>
           <li>
             <a
+              aria-label="Lien vers instagram"
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
@@ -343,11 +344,11 @@
     <section id="contact">
       <div class="container">
         <article class="form-container">
-          <h3>Une question ? Une demande de devis ?</h3>
+          <h3 id="titre">Une question ? Une demande de devis ?</h3>
           <p>
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
-          <form action="" method="post">
+          <form aria-labelledby="titre" action="" method="post">
             <label for="nom">Nom</label>
             <input type="text" name="nom" id="nom" />
             <label for="email">Email</label>
